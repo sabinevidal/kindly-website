@@ -1,30 +1,37 @@
 {
   "files": {
     "main.css": "/static/css/main.dfe0c954.chunk.css",
-    "main.js": "/static/js/main.23e4b793.chunk.js",
-    "main.js.map": "/static/js/main.23e4b793.chunk.js.map",
+    "main.js": "/static/js/main.33585e63.chunk.js",
+    "main.js.map": "/static/js/main.33585e63.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d68aa45c.js",
     "runtime-main.js.map": "/static/js/runtime-main.d68aa45c.js.map",
     "static/css/2.c1256375.chunk.css": "/static/css/2.c1256375.chunk.css",
-    "static/js/2.6d65a8ad.chunk.js": "/static/js/2.6d65a8ad.chunk.js",
-    "static/js/2.6d65a8ad.chunk.js.map": "/static/js/2.6d65a8ad.chunk.js.map",
+    "static/js/2.bd83f3e6.chunk.js": "/static/js/2.bd83f3e6.chunk.js",
+    "static/js/2.bd83f3e6.chunk.js.map": "/static/js/2.bd83f3e6.chunk.js.map",
     "index.html": "/index.html",
     "static/css/2.c1256375.chunk.css.map": "/static/css/2.c1256375.chunk.css.map",
     "static/css/main.dfe0c954.chunk.css.map": "/static/css/main.dfe0c954.chunk.css.map",
-    "static/js/2.6d65a8ad.chunk.js.LICENSE.txt": "/static/js/2.6d65a8ad.chunk.js.LICENSE.txt",
+    "static/js/2.bd83f3e6.chunk.js.LICENSE.txt": "/static/js/2.bd83f3e6.chunk.js.LICENSE.txt",
     "static/media/App.css": "/static/media/Jost-VariableFont_wght.3410386a.ttf",
+    "static/media/check-message.e9ecc7bf.svg": "/static/media/check-message.e9ecc7bf.svg",
+    "static/media/check-with-kindly.0333fbb1.svg": "/static/media/check-with-kindly.0333fbb1.svg",
     "static/media/icon-arrow-down-blue.afeaff4e.svg": "/static/media/icon-arrow-down-blue.afeaff4e.svg",
     "static/media/icon-arrow-down-white.b548ce01.svg": "/static/media/icon-arrow-down-white.b548ce01.svg",
     "static/media/icon-msg-bad.a9f111e9.svg": "/static/media/icon-msg-bad.a9f111e9.svg",
     "static/media/icon-msg-good.402a4758.svg": "/static/media/icon-msg-good.402a4758.svg",
     "static/media/icon-send.dd942669.svg": "/static/media/icon-send.dd942669.svg",
-    "static/media/unicef-logo.dd47353a.png": "/static/media/unicef-logo.dd47353a.png"
+    "static/media/kindly-empowerment.7150b99b.svg": "/static/media/kindly-empowerment.7150b99b.svg",
+    "static/media/kindly-open-source.6a23f78d.svg": "/static/media/kindly-open-source.6a23f78d.svg",
+    "static/media/kindly-privacy.7a278a64.svg": "/static/media/kindly-privacy.7a278a64.svg",
+    "static/media/send-final-message.c106c5b2.svg": "/static/media/send-final-message.c106c5b2.svg",
+    "static/media/unicef-logo.dd47353a.png": "/static/media/unicef-logo.dd47353a.png",
+    "static/media/view-feedback.21f269d5.svg": "/static/media/view-feedback.21f269d5.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d68aa45c.js",
     "static/css/2.c1256375.chunk.css",
-    "static/js/2.6d65a8ad.chunk.js",
+    "static/js/2.bd83f3e6.chunk.js",
     "static/css/main.dfe0c954.chunk.css",
-    "static/js/main.23e4b793.chunk.js"
+    "static/js/main.33585e63.chunk.js"
   ]
 }

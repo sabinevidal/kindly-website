@@ -28,6 +28,7 @@ jobs:
         run: |
           cd src/components
           sed -i "s/COUNTER\=.*/COUNTER=${COUNTER}/" ContributionCounter.js
+          echo 'ContributionCounter.js'
 
       - name: 'Commit updated counter'
         run: |

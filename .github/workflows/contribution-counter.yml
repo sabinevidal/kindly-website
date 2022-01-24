@@ -39,9 +39,7 @@ jobs:
           fi
 
       - name: 'Commit updated counter'
-        env:
-          CHANGES_EXIST: ${{ steps.change_check.outputs.changesExist }}
-        if: CHANGES_EXIST == 'true'
+        if: ${{ steps.change_check.outputs.changesExist }} == 'true'
         run: |
           echo ${{ steps.change_check.outputs.changesExist }}
           git config --global user.name 'sabinevidal'

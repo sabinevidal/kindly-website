@@ -10,7 +10,7 @@ jobs:
       - name: Checkout unicef/kindly repo into modeling/dataset file
         uses: actions/checkout@v2
         with:
-          repository: sabinevidal/kindly
+          repository: unicef/kindly
 
       - name: Count number of objects in training_data file
         id: object_count
@@ -28,9 +28,17 @@ jobs:
         run: |
           cd src/components
           sed -i "s/COUNTER \= .*/COUNTER = ${COUNTER}/" ContributionCounter.js
-          less ContributionCounter.js
+
+      - name: check for changes
+        run: |
+          if git diff --exit-code; then
+            echo "::set-env name=changes_exist::false"
+          else
+            echo "::set-env name=changes_exist::true"
+          fi
 
       - name: 'Commit updated counter'
+        if: env.changes_exist == 'true'
         run: |
           git config --global user.name 'sabinevidal'
           git config --global user.email 'sabinevidal@users.noreply.github.com'

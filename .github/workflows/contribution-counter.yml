@@ -39,7 +39,7 @@ jobs:
           fi
 
       - name: 'Commit updated counter'
-        if: ${{ steps.change_check.outputs.changesExist }} == 'true'
+        if: steps.change_check.outputs.changesExist
         run: |
           git config --global user.name 'sabinevidal'
           git config --global user.email 'sabinevidal@users.noreply.github.com'

@@ -40,7 +40,7 @@ jobs:
 
       - name: 'Commit updated counter'
         run: |
-          if ${{ steps.change_check.outputs.changesExist }} == true
+          if ${{ steps.change_check.outputs.changesExist }} == true; then
             git config --global user.name 'sabinevidal'
             git config --global user.email 'sabinevidal@users.noreply.github.com'
             git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/sabinevidal/kindly-website

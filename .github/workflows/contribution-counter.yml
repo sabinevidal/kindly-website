@@ -30,15 +30,16 @@ jobs:
           sed -i "s/COUNTER \= .*/COUNTER = ${COUNTER}/" ContributionCounter.js
 
       - name: check for changes
+        id: change_check
         run: |
           if git diff --exit-code; then
-            echo "::set-env name=changes_exist::false"
+            echo "::set-output name=changesExist::false"
           else
-            echo "::set-env name=changes_exist::true"
+            echo "::set-output name=changesExist::true"
           fi
 
       - name: 'Commit updated counter'
-        if: env.changes_exist == 'true'
+        if: ${{ steps.change_check.outputs.changesExist }} == 'true'
         run: |
           git config --global user.name 'sabinevidal'
           git config --global user.email 'sabinevidal@users.noreply.github.com'

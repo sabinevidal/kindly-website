@@ -1,9 +1,9 @@
 name: Contribution Counter
 
-on:
-  schedule:
+on: push
+#   schedule:
     # Runs once a day at 00:15 UTC
-    - cron: '15 0 * * *'
+#     - cron: '15 0 * * *'
 
 jobs:
   count_contributions:
@@ -34,8 +34,12 @@ jobs:
 
       - name: 'Commit updated counter'
         run: |
-          git config --global user.name 'sabinevidal'
-          git config --global user.email 'sabinevidal@users.noreply.github.com'
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/unicef/kindly-website
-          git commit -am "Updated counter - ${{ steps.object_count.outputs.phraseNumber }}"
-          git push
+          if git diff --exit-code; then
+            echo "No changes"
+          else
+            git config --global user.name 'sabinevidal'
+            git config --global user.email 'sabinevidal@users.noreply.github.com'
+            git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/unicef/kindly-website
+            git commit -am "Updated counter - ${{ steps.object_count.outputs.phraseNumber }}"
+            git push
+          fi
